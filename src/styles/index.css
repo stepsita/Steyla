@@ -24,6 +24,7 @@ body{
     background: radial-gradient(circle, rgba(241,241,241,1) 0%,
     rgba(245,223,254,1) 35%, rgba(223,250,218,1) 100%);
     transition: var(--tran-05);
+    
 }
 ::selection{
     background-color: var(--primary-colorr);
@@ -135,9 +136,6 @@ body{
     transition: var(--tran-05);
     border-radius: 5%;
 }
-
-
-
 .sidebar.sidebar.close .toggle{
     width: 100%;
     top: 20%;
@@ -211,14 +209,15 @@ body{
     height: 10vh;
     width: calc(100% - 78px);
 }
-/** ESTRUCTURA DE HOME**/
 
-    
+
+/** ESTRUCTURA DE HOME**/
+ 
 .home{
     padding: 40px;
     margin-left: 5%;
     position: static;
-    height: 70vh;
+    height: 90vh;
     width: 95,2%;
     background: rgb(241,241,241);
     background: radial-gradient(circle, rgba(241,241,241,1) 0%,
@@ -230,6 +229,8 @@ body{
     align-items: center;
     display: grid;
 }
+
+
 .home-img img{
     height: 400px;
     width:400px;
@@ -247,6 +248,38 @@ body{
     color: #24003c;
     font-size: 18px;
     font-weight: 60;
+}
+
+/* SEARCH BAR */
+.cont-search{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    
+    align-items: center;
+    background-color: transparent;
+}
+.search-box{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 10px;
+}
+.search-box:hover input{
+    width: 400px;
+}
+.search-box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
 }
 
 /** FOOTER **/
@@ -311,3 +344,133 @@ ul li a{
     text-decoration: none;
     color: rgb(235, 243, 230)
 }
+
+/** ESTRUCTURA DE CONTENEDOR**/
+.container-texto{
+    justify-content: center;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.featurette-divider{
+    border-top: 1px solid rgb(211, 211, 211);
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+.container-texto h1{
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.container-texto p{
+    color: rgb(80, 80, 80);
+}
+
+.container{
+    justify-content: center;
+    display: flex;
+    align-items: stretch;
+    gap: 25px;
+    margin-left: 45px;
+}
+
+/** ESTRUCTURA DE CARD**/
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    padding: 20px 1px;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4),0 4px 6px -4px rgba(0, 0, 0, 0.562);
+    border-radius: 10px;
+    background-color: #6B6ECC;
+    background: linear-gradient(45deg, rgba(237, 232, 240, 0.918) 0%, #e6e3e9 100%);
+  }
+
+  .card-s {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    height: 290px;
+    padding: 20px 1px;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4),0 4px 6px -4px rgba(0, 0, 0, 0.562);
+    border-radius: 10px;
+    background-color: #6B6ECC;
+    background: linear-gradient(45deg, rgba(237, 232, 240, 0.918) 0%, #e6e3e9 100%);
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content .price {
+    color: rgb(59, 7, 102);
+    font-weight: 800;
+    font-size: 50px;
+  }
+
+  .content .price-s{
+    color: rgb(73, 18, 119);
+    font-weight: 800;
+    font-size: 35px;
+  }
+  
+  .content .description {
+    color: rgba(0, 0, 0, 0.658);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .content .title {
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.822);
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .content .title-s {
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.822);
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(63, 15, 92);
+    border-radius: 0.5rem;
+    width: 90%;
+    text-shadow: 0px 4px 18px #2c3442;
+    transition: all .2s ease
+  }
+
+  button:hover{
+    background-color: rgb(187, 144, 212);
+    cursor: pointer;
+  }
+  
